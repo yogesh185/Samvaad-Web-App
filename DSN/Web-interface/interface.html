@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samvaad</title>
+    <script src="./interface.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./interface.css">
+    <script src="https://kit.fontawesome.com/ef4f439775.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Loading screen animation code -->
+    <div class="splashScreen">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+    </div>
+
+    <div class="box" id="mainBox">
+        <div class="left-box">
+            <div class="logo" href=""><img
+                    src="https://i.pinimg.com/originals/17/ba/27/17ba27a400fdf2e4afffb9431e417b6f.jpg" alt=""></div>
+            <div class="logo-1" id="homeIcon"><i class=" icons fa-solid fa-house-chimney homeIcon"></i></div>
+            <!-- <a href=""><i class="fa-solid fa-house-chimney"></i></a> -->
+            <div class="logo-1" id="profileIcon"><i class="icons fa-solid fa-user profileIcon"></i></div>
+            <!-- <a href=""><i class="fa-solid fa-user"></i></a> -->
+            <div class="logo-1" id="moonIcon"><i  class="icons fa-solid fa-moon moonIcon"></i></div>
+            <!-- <a href=""><i class="fa-solid fa-moon"></i></a> -->
+            <div class="logo-1" id="settingsIcon"><i class="icons fa-solid fa-gear settingsIcon"></i></div>
+            <!-- <a href=""><i class="fa-solid fa-gear"></i></a> -->
+            <div class="logo-2"><a href="../Login-Page/Login.html"><i id="logoutIcon" class="fa-solid fa-power-off"></i></a></div>
+            <!-- <a href=""><i class="fa-solid fa-power-off"></i></a> -->
+        </div>
+
+        <div class="middle-box">
+
+            <!-- Home -->
+
+            <div class="home">
+                <p>Chats</p>
+                <div class="search"><i class="fa-solid fa-magnifying-glass fa-lg"></i><input type="text"
+                        placeholder="Search Chat"></div>
+                <div class="chatnames"><a>
+                        <div id="firstChat" class="chat chat1">
+                            <div class="profile profile1">MS</div>
+                            <div class="profilename1">
+                                <p class="name">Megha Saxena</p>
+                                <p class="content">Hey! there I'm available.</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="chatnames"><a>
+                        <div id="secondChat" class="chat chat2">
+                            <div class="profile profile2">YA</div>
+                            <div class="profilename2">
+                                <p class="name">Yogesh Amrute</p>
+                                <p class="content">Good Morning 😊</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="chatnames"><a>
+                        <div id="thirdChat" class="chat chat3">
+                            <div class="profile profile3">VJ</div>
+                            <div class="profilename3">
+                                <p class="name">Vaidic Jain</p>
+                                <p class="content">What time is our meeting?</p>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+
+            <!-- Profile -->
+
+            <div class="Profile displayNone">
+                <p>Profile</p>
+
+                <div class="profile-content">
+                    <div class="profile-pic"><img src="./images/avatar.png" alt=""></div>
+                    <p id="profileName">Harshdeep Singh</p>
+                    <span>Mumbai,India</span>
+                </div>
+
+                <div class="stats">
+                    <p>STATS</p>
+                    <div class="statsbox">
+                        <div class="Friends">
+                            <span>3</span>
+                            <p>Friends</p>
+                        </div>
+                        <div class="Photos">
+                            <span>20</span>
+                            <p>Photos</p>
+                        </div>
+                        <div class="Rating">
+                            <span>9/10</span>
+                            <p>Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings -->
+
+            <div class="settings displayNone">
+                <p>Settings</p>
+                <div class="general-info">
+                    <p class="whiteText">General Info</p>
+                    <div class="pic">
+                        <img src="./images/avatar.png" alt=""> <input type="file" class="fileInput">
+                    </div>
+                    <div class="inputbox">
+                        <div class="input Name">
+                            <input class="settingsInput" type="text" value="Harshdeep Singh">
+                            <div class="text textname">Full Name</div>
+                        </div>
+                        <div class="input email">
+                            <input class="settingsInput" type="email" value="harshdeepsingh@gmail.com">
+                            <div class="text">Email</div>
+                        </div>
+                        <div class="input contact">
+                            <input class="settingsInput" type="text" value="9612345983">
+                            <div class="text">Contact</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="password">
+                    <p class="whiteText">Change Password</p>
+                    <div class="inputbox">
+                        <div class="pass">
+                            <input class="settingsInput" type="text">
+                            <div class="passtext">Current Password</div>
+                        </div>
+                        <div class="pass">
+                            <input class="settingsInput" type="password">
+                            <div class="passtext">New Password</div>
+                        </div>
+                        <div class="pass">
+                            <input class="settingsInput" type="password">
+                            <div class="passtext">Confirm Password</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="save">
+                    <button id="saveBtn" class="setting-save">Save Changes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-box">
+
+            <!-- Default ChatBox -->
+
+            <div class="default">
+                <img src="./images/chat-display.svg" alt="default-chat-image">
+                <p>Please select a chat to start messaging.</p>
+            </div>
+
+            <!-- ChatBox -->
+
+            <div class="chatbox1 displayNone">
+                <nav class="chatNav">
+                    <div class="profile profile1">MS</div>
+                    <div class="profilename1">
+                        <p class="name">Megha Saxena</p>
+                        <p class="content">Typing...</p>
+                    </div>
+                </nav>
+                <div class="centre-chat">
+                    <span class="left">Hello, good morning.</span>
+                    <span class="right">Hi Megha <br> Good morning 😃. How are you?</span>
+                    <div class="separator">AUG 31, 2022</div>
+                    <span class="left">Is there any meeting today?</span>
+                </div>
+                <div class="message">
+                    <textarea class="textArea" placeholder="Type your message here..."></textarea>
+                    <a href=""><img src="./images/emoji.svg" alt=""></a>
+                    <a href=""><img src="./images/attach.svg" alt=""></a>
+                    <button><img src="./images/send.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="chatbox2 displayNone">
+                <nav class="chatNav">
+                    <div class="profile profile2">YA</div>
+                    <div class="profilename1">
+                        <p class="name">Yogesh Amrute</p>
+                        <p class="content">Typing...</p>
+                    </div>
+                </nav>
+                <div class="centre-chat">
+                    <span class="left">Hey!, can you please provide the details of the meeting.</span>
+                    <span class="right">Hi Yogesh,<br> The meeting details have been provided to everyone via an
+                        official mail from the company.</span>
+                    <div class="separator">AUG 31, 2022</div>
+                    <span class="left">Okay, I'll check my mail then.</span>
+                </div>
+                <div class="message">
+                    <textarea class="textArea" placeholder="Type your message here..."></textarea>
+                    <a href=""><img src="./images/emoji.svg" alt=""></a>
+                    <a href=""><img src="./images/attach.svg" alt=""></a>
+                    <button><img src="./images/send.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="chatbox3 displayNone">
+                <nav class="chatNav">
+                    <div class="profile profile3">VJ</div>
+                    <div class="profilename1">
+                        <p class="name">Vaidic Jain</p>
+                        <p class="content">Typing...</p>
+                    </div>
+                </nav>
+                <div class="centre-chat">
+                    <span class="left">Hey!,<br> I have sent the desings for the interface. Kindly check and let me know
+                        if there are any suggestions.</span>
+                    <span class="right">Hi Vaidic <br>I'll ket you know for the improvements.</span>
+                    <div class="separator">AUG 31, 2022</div>
+                    <span class="left">Okay👍</span>
+                </div>
+                <div class="message">
+                    <textarea class="textArea" placeholder="Type your message here..."></textarea>
+                    <a href=""><img src="./images/emoji.svg" alt=""></a>
+                    <a href=""><img src="./images/attach.svg" alt=""></a>
+                    <button><img src="./images/send.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
